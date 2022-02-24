@@ -1,14 +1,26 @@
 # Dymo Connect SDK Sample Application for VB.net
 
-Since Dymo did not provide any vb.net samples with their Dymo Connect SDK, I am sharing my sample application to help others get started.
+## Getting Started 🚀
 
-Dependencies
-DYMO.Connect.SDK 1.4.2.35
-NETStandard - NETStandard.Library 2.0.0
-SkiaSharp - SkiaSharp 1.68.0
-SkiaSharp.Views - SkiaSharp.Views 1.68.0
+Since Dymo did not provide any vb.net samples with their Dymo Connect SDK, I am sharing my sample vb.net timer application.
 
-**ClickOnce Deployment Tips**
+### Installing 🔧
+
+Open the project on Visual Studio
+
+```
+File > Open > Project/Solution > Select "Dymo Connect SDK Sample Application for VB.net.vbproj"
+```
+
+## Nuget package 📦
+* [DYMO.Connect.SDK](https://www.nuget.org/packages/DYMO.Connect.SDK/) - The nuget package required
+
+## Dependencies 🛠️
+* [NETStandard](https://www.nuget.org/packages/NETStandard.Library/) - NETStandard.Library (>= 2.0.0) 
+* [SkiaSharp](https://www.nuget.org/packages/SkiaSharp/) - SkiaSharp (= 1.68.0)
+* [SkiaSharp.Views](https://www.nuget.org/packages/SkiaSharp.Views/) - SkiaSharp.Views (= 1.68.0)
+
+## ClickOnce Deployment Tips
 
 When you build your application with the Dymo Connect SDK from Nuget, not all the dll files will come along with your ClickOnce deployment.
 You will know that you have dlls missing when you get an error that the element DieCutLabel does not exist in template or that no printers can be found.
